@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="title">
+        <span>S</span>
+        <span>H</span>
+        <span>O</span>
+        <span>R</span>
+        <span>T</span>&nbsp;&nbsp;
+        <span>Y</span>
+        <span>O</span>
+        <span>U</span>
+        <span>R</span>&nbsp;&nbsp;
+        <span>U</span>
+        <span>R</span>
+        <span>L</span>
+    </p>
+    <div class="block-1">
+        <form id="form" autocomplete="off">
+        <input type="text" id="input" value="" placeholder="Enter URL">
+            <br>
+        <button id="shorten">Short Url</button>
+      </form>
+    </div>
+
+    <div class="container">
+    <div class="result-hidden" id="responseField">
+
+      </div>
+    </div>
+
+
+
+    <script>
+        function myFunction() {
+          var copyText = document.getElementById("url");
+          copyText.select();
+          document.execCommand("copy");
+          alert("Copied the URL: " + copyText.value);
+          console.log(copyText.value);
+        }	 
+    </script>
+    <script src="main.js"></script>
+    <script src="Work.js"></script>
+
+</body>
+<footer>
+    <p>
+           Made by Neeraj Fulpatiya 
+     </p>
+</footer>
+</html>
